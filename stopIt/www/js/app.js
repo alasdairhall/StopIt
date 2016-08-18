@@ -42,6 +42,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
+    .state('menu.calc1' , {
+      url: '/calc1',
+      views: {
+        'menuContent' : {
+          templateUrl: 'templates/calc1.html',
+          controller: 'calcCtrl'
+        }
+      }
+    })
+
+    .state('menu.calc2' , {
+      url: '/calc2',
+      views: {
+        'menuContent' : {
+          templateUrl: 'templates/calc2.html',
+          controller: 'calcCtrl'
+        }
+      }
+    })
+
     $urlRouterProvider.otherwise('/menu/home');
 
   })
